@@ -21,4 +21,28 @@ header {
     text-align: center;
     border: 2px solid #fff;
     padding: .5rem;
+    transition: opacity .2s ease;
+}
+
+.logo:hover {
+    opacity: .8;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contacts-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.contacts-container img {
+    width: 2rem;
+    transition: opacity .2s ease;
+}
+
+.contacts-container img:hover {
+    opacity: .8;
 }
