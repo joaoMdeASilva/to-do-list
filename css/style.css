@@ -12,6 +12,29 @@ body {
     font-family: "Inter";
 }
 
+button {
+    all: unset;
+    color: black;
+    background-color: #fff;
+    border: 2px solid #1c1c1c;
+    border-radius: 3px;
+    padding: .4rem .5rem;
+    transition: opacity .2s ease;
+}
+
+button:hover {
+    opacity: .5;
+    cursor: pointer;
+    transition: background-color .2s ease;
+}
+
+button:active {
+    opacity: 1;
+    background-color: #1c1c1c;
+    color: white
+}
+
+
 header {
     background-color: #1c1c1c;
     color: #fff;
