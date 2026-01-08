@@ -2,6 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+:root {
+    --black: #1c1c1c;
+    --white: #ffffff;
+    --primary: #ffa53d;
+    --primary-bold: #865822;
+    --secondary: #faf3eb;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,14 +17,15 @@
 }
 
 body {
+    color: var(--primary-bold);
     font-family: "Inter";
+    background-color: var(--secondary);
 }
 
 button {
     all: unset;
-    color: black;
-    background-color: #fff;
-    border: 2px solid #1c1c1c;
+    background-color: var(--white);
+    border: 2px solid var(--primary-bold);
     border-radius: 3px;
     padding: .4rem .5rem;
     transition: opacity .2s ease;
@@ -30,14 +39,14 @@ button:hover {
 
 button:active {
     opacity: 1;
-    background-color: #1c1c1c;
-    color: white
+    background-color: var(--primary);
+    color: var(--white);
 }
 
 
 header {
-    background-color: #1c1c1c;
-    color: #fff;
+    background-color: var(--primary);
+    color: var(--white);
     padding: 1rem 3rem;
     display: flex;
     justify-content: space-between;
@@ -48,7 +57,7 @@ header {
     font-family: montserrat, inter;
     text-transform: uppercase;
     text-align: center;
-    border: 2px solid #fff;
+    border: 2px solid var(--white);
     padding: .5rem;
     transition: opacity .2s ease;
 }
@@ -58,7 +67,7 @@ header {
 }
 
 .logo a {
-    color: #fff;
+    color: var(--white);
     text-decoration: none;
 }
 
