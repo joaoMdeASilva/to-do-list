@@ -103,3 +103,15 @@ main {
 .title-container span {
     font-size: 1.2rem
 }
+
+.btns-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: .2rem
+}
+
+.imp-btn-description {
+    font-size: .8rem;
+    grid-column-start: 2
+}
